@@ -3,6 +3,7 @@
     width: 75vw;
     background-color: teal;
     display: flex;
+    flex-direction: row;
 }
 
 .container div{
@@ -12,16 +13,20 @@
 
 #div1{
     background-color:cyan;
+    order: 4;
 }
 
 #div2{
     background-color: yellow;
+    order: 0;
 }
 
 #div3{
     background-color: red;
+    order: 1;
 }
 
 #div4{
     background-color: green;
+    order: 3;
 }

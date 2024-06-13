@@ -4,3 +4,24 @@
     background-color: teal;
     display: flex;
 }
+
+.container div{
+    height: 200px;
+    width: 200px;
+}
+
+#div1{
+    background-color:cyan;
+}
+
+#div2{
+    background-color: yellow;
+}
+
+#div3{
+    background-color: red;
+}
+
+#div4{
+    background-color: green;
+}

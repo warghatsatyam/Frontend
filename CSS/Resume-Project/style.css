@@ -118,7 +118,7 @@ body {
 
 
 section:nth-child(2n){
-    background-color:light-grey;
+    background-color: lightgray;
 }
 
 section:nth-child(2n+1){
@@ -127,6 +127,140 @@ section:nth-child(2n+1){
 
 #skills{
     display:flex;
-    width:70%;
-    background-color:blue
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin-top: 30px;
 }
+
+#skill-header{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin-bottom: 5%;
+}
+
+#skill-container{
+    font-size: large;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-bottom: 40px;
+}
+
+#skill-container > div{
+    width: 150px;
+    background-color: lightgray;
+    border-radius: 25px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+#html-skill-percentage{
+    width: 80%;
+    background-color: lightblue;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#css-skill-percentage{
+    width: 80%;
+    background-color: lightcoral;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+
+#javascript-skill-percentage{
+    width: 90%;
+    background-color: lightcoral;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+
+#react-js-skill-percentage{
+    width: 90%;
+    background-color: lightcyan;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+
+#node-js-skill-percentage{
+    width: 95%;
+    background-color: lightgoldenrodyellow;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+
+#mongodb-skill-percentage{
+    width: 80%;
+    background-color: lightgreen;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+
+#express-js-skill-percentage{
+    width: 70%;
+    background-color: lightseagreen;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+
+#hld-skill-percentage{
+    width: 80%;
+    background-color: lightsalmon;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+
+#lld-skill-percentage{
+    width: 80%;
+    background-color: lightslategrey;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+
+#dsa-skill-percentage{
+    width: 90%;
+    background-color: lightseagreen;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#portfolio{
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#portfolio-header{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+}
+
+#portfolio-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+#portfolio-container> div > img {
+    height: 300px;
+}
+

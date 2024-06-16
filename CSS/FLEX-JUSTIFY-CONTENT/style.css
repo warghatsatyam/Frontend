@@ -4,7 +4,10 @@
     height: 500px;
     display: flex;
     background-color: lightblue;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .container > div{

@@ -1,3 +1,22 @@
+:root{
+    --primar-color:lightgray;
+    --border-radius:25px;
+    --header-width:70%;
+    --container-width:70%;
+    --margin-bottom:40px;
+    --margin-top:40px;
+    --background-html:lightblue;
+    --background-css:lightcoral;
+    --background-javascript:lightcoral;
+    --background-react:lightcyan;
+    --background-node: lightgoldenrodyellow;
+    --background-mongodb: lightgreen;
+    --background-express: lightseagreen;
+    --background-hld: lightsalmon;
+    --background-lld: lightslategrey;
+    --background-dsa: lightseagreen;
+}
+
 body {
     margin: 0px;
     font-family: sans-serif;
@@ -131,110 +150,97 @@ section:nth-child(2n+1){
     align-items: center;
     height: auto;
     width: 100%;
-    margin-top: 30px;
+    margin-top: var(--margin-top);
 }
 
-#skill-header{
+.header{
     display: flex;
     justify-content: center;
-    width: 70%;
+    width: var(--margin-bottom);
     margin-bottom: 5%;
 }
 
-#skill-container{
+.skill-container{
     font-size: large;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 70%;
-    margin-bottom: 40px;
+    width: var(--container-width);
+    margin-bottom: var(--margin-bottom);
 }
 
-#skill-container > div{
+.skill-container > div{
     width: 150px;
-    background-color: lightgray;
-    border-radius: 25px;
+    background-color: var(--primar-color);
+    border-radius: var(--border-radius);
     margin: 10px;
     text-align: center;
     border: 1px solid gray;
 }
 
-#html-skill-percentage{
+.skill{
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+}
+
+.html{
     width: 80%;
-    background-color: lightblue;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    background-color: var(--background-html);
+
 }
 
-#css-skill-percentage{
+.css{
     width: 80%;
-    background-color: lightcoral;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    background-color:var(--background-css);
+
 }
 
 
-#javascript-skill-percentage{
+.javascript{
     width: 90%;
-    background-color: lightcoral;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    background-color: var(--background-javascript);
 }
 
 
-#react-js-skill-percentage{
+.react-js{
     width: 90%;
-    background-color: lightcyan;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    background-color: var(--background-react);
 }
 
 
-#node-js-skill-percentage{
+.node-js{
     width: 95%;
-    background-color: lightgoldenrodyellow;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    background-color: var(--background-node);
 }
 
 
-#mongodb-skill-percentage{
+.mongodb{
     width: 80%;
-    background-color: lightgreen;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    background-color: var(--background-mongodb);
 }
 
 
-#express-js-skill-percentage{
+.express-js{
     width: 70%;
-    background-color: lightseagreen;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    background-color: var(--background-express);
 }
 
 
-#hld-skill-percentage{
+.hld{
     width: 80%;
-    background-color: lightsalmon;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    background-color: var(--background-hld);
 }
 
 
-#lld-skill-percentage{
+.lld{
     width: 80%;
-    background-color: lightslategrey;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    background-color: var(--background-lld);
 }
 
 
-#dsa-skill-percentage{
+.dsa{
     width: 90%;
-    background-color: lightseagreen;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    background-color: var(--background-dsa);
 }
 
 #portfolio{

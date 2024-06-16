@@ -1,0 +1,15 @@
+.flex-container{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    background-color: #8ffcc9;
+    width: 400px;
+}
+
+.flex-container > div{
+    background-color: white;
+    width: 60px;
+    margin: 5px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+}

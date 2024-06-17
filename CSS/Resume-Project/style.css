@@ -15,6 +15,8 @@
     --background-hld: lightsalmon;
     --background-lld: lightslategrey;
     --background-dsa: lightseagreen;
+    --gradient-start:#29539f;
+    --gradient-end:#403066;
 }
 
 body {
@@ -158,6 +160,7 @@ section:nth-child(2n+1){
     justify-content: center;
     width: var(--margin-bottom);
     margin-bottom: 5%;
+    color: white;
 }
 
 .skill-container{
@@ -270,3 +273,25 @@ section:nth-child(2n+1){
     height: 300px;
 }
 
+
+.contact-container{
+    width: inherit;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(45deg,var(--gradient-start),var(--gradient-end));
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+.container > div{
+    height: 400px;
+    width: 500px;
+    background-color: white;
+    margin: 20px;
+}

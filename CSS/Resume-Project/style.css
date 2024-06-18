@@ -17,6 +17,9 @@
     --background-dsa: lightseagreen;
     --gradient-start:#29539f;
     --gradient-end:#403066;
+    --background-color: #ecf0f1;
+    --divider-color: #95a5a6;
+    --accent-color: #bdc3c7;
 }
 
 body {
@@ -373,11 +376,13 @@ section:nth-child(2n+1){
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .timeline{
     position: relative;
-    border: 2px solid black;
     width: 75%;
     justify-content: center;
 }
@@ -385,12 +390,30 @@ section:nth-child(2n+1){
 .timeline-box{
     position: relative;
     width: 40%;
-    border: 1px solid black;
     left: 5%;
-    min-height: 150px;
+    min-height: 100px;
     margin: 5px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
 }
 
+.designation{
+    font-size: 1.5em;
+}
+
+.company-name{
+    font-size: 1.2em;
+}
+
+.experience-date{
+    font-size: 1em;
+}
+
+.content{
+    font-size: 0.6em;
+    color: #29539f;
+}
 .timeline-box:nth-child(2n){
     left:53%;
 }
@@ -408,26 +431,23 @@ section:nth-child(2n+1){
     position: sticky;
     top: 30%;
     transform: rotate(90deg);
+    z-index: 2;
 }
-
+ 
 
 .timeline-box:nth-child(2n):after{
     content: "";
     position: absolute;
     top: 20%;
-    left: -9%;
-    border-radius: 50%;
     width: 0.5rem;
     height: 0.5rem;
-    background-color: red;
+    z-index: 1;
 }
 .timeline-box:nth-child(2n+1):after{
     content: "";
     position: absolute;
-    top: 20%;
     right: -13%;
-    border-radius: 50%;
     width: 0.5rem;
     height: 0.5rem;
-    background-color: red;
+    z-index: 1;
 }

@@ -451,3 +451,28 @@ section:nth-child(2n+1){
     height: 0.5rem;
     z-index: 1;
 }
+
+
+#education{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color);
+}
+
+.education{
+    font-size: 1.5em;
+}
+
+.institute_name{
+    font-size: 1.2em;
+}
+
+.education-date{
+    font-size: 1em;
+}
+
+.content{
+    font-size: 0.6em;
+    color: #29539f;
+}

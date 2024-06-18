@@ -146,6 +146,9 @@ section:nth-child(2n+1){
     background-color:white;
 }
 
+
+/* Skills */
+
 #skills{
     display:flex;
     flex-direction: column;
@@ -158,9 +161,9 @@ section:nth-child(2n+1){
 .header{
     display: flex;
     justify-content: center;
-    width: var(--margin-bottom);
+    width: 100%;
     margin-bottom: 5%;
-    color: white;
+    color: blue;
 }
 
 .skill-container{
@@ -285,13 +288,16 @@ section:nth-child(2n+1){
 }
  */
 
+
+/* Contact Us */
+
  #contact{
     background-image: linear-gradient(45deg, var(--gradient-start),var(--gradient-end));
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 60vh;
  }
 
  .contact-header{
@@ -358,4 +364,70 @@ section:nth-child(2n+1){
 }
 .contact-links{
     margin-top: 50px;
+}
+
+
+/* Work Experience */
+
+#experience{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline{
+    position: relative;
+    border: 2px solid black;
+    width: 75%;
+    justify-content: center;
+}
+
+.timeline-box{
+    position: relative;
+    width: 40%;
+    border: 1px solid black;
+    left: 5%;
+    min-height: 150px;
+    margin: 5px;
+}
+
+.timeline-box:nth-child(2n){
+    left:53%;
+}
+
+.timeline-divider{
+    margin-top: 30px;
+    height: 90%;
+    position: absolute;
+    border: 2px solid lightblue;
+    width: 0%;
+    left: 50%;
+}
+
+.timeline-traveler{
+    position: sticky;
+    top: 30%;
+    transform: rotate(90deg);
+}
+
+
+.timeline-box:nth-child(2n):after{
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: -9%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: red;
+}
+.timeline-box:nth-child(2n+1):after{
+    content: "";
+    position: absolute;
+    top: 20%;
+    right: -13%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: red;
 }

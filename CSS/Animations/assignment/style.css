@@ -1,0 +1,15 @@
+div{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    background-color: aquamarine;
+    transition: 1s ease-in-out;
+}
+
+div:hover{
+    transform: translateX(200px);
+    height: 150px;
+    width: 150px;
+}

@@ -1,0 +1,15 @@
+.custom-card{
+    color:#2385ff;
+    border: none;
+}   
+
+h1{
+    color: #68747e;
+}
+
+.custom-img{
+    border: 2px solid red;
+    background-color: #343a40;
+    margin-top: 20px;
+}
+

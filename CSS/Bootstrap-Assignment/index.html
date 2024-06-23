@@ -5,36 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <title>Document</title>
-    <style>
-        .base-div{
-            height: 100px;
+    <style>        
+        @media (min-width:720px) and (max-width:920px){
+            .row .mid-height{
+                height: 90vh;
+            }
         }
-        .div1{
-            background-color: red;
+        .container-fluid .banner{
+            height: 150px;
+            background: linear-gradient(to bottom, #e1e1e1, #9a9a9a);
         }
-        .div2{
-            background-color: green;
-        }
-        .div3{
-            background-color: yellow;
-        }
-        .div4{
-            background-color: blue;
-        }
-        
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="row justify-content-center">
+    <div class="container-fluid banner-gradient">
+        <div class="row justify-content-center d-flex align-items-center banner mb-3">
             <h1>Coding Ninjas</h1>
         </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 base-div m-2 col-sm-12 col-md-12 col-lg-12 div1 shadow p-3">
+                <h4>What we have in store for you?</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Placeat adipisci ipsa nemo excepturi deleniti deserunt odit culpa
+                necessitatibus. Magni, eius aut ea incidunt corrupti magnam amet 
+                vitae blanditiis aliquid suscipit!</p>
 
-        <div class="row">
-            <div class="col-12 base-div div1"></div>
-            <div class="col-12 base-div div2"></div>
-            <div class="col-12 base-div div3"></div>
-            <div class="col-12 base-div div4"></div>
+                <a href="#" class="stretched-link">More Details &#8594;</a>
+            </div>
+            <div class="col-12 m-2 col-sm-12 col-md-3 col-lg-3 mid-height div2 shadow p-3 m-3">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, molestiae.
+                    Illum voluptas nam quibusdam praesentium odit, nisi sed quam, provident 
+                    quos corrupti fugit consequatur ipsum similique odio! Blanditiis, obcaecati unde.
+                </p>
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Details
+                </button>
+            </div>
+            <div class="col-12 m-2 col-sm-5 col-md-3 col-lg-3 mid-height div3 shadow bg-dark border border-danger m-3 d-flex flex-column align-items-center">
+                <figure class="figure">
+                    <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png" class="img-fluid figure=img rounded" alt="">
+                </figure>
+                <button type="button" class="btn btn-outline-light text-white justify-content-center">
+                    Details 
+                </button>
+            </div>
+            <div class="col-12 m-2 col-sm-5 col-md-3 col-lg-3 mid-height div4 shadow p-3 m-3 d-flex flex-column align-items-center">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, 
+                    accusantium tenetur. Velit, minus, alias ratione quidem odio dolorem 
+                    ab sint architecto temporibus, enim harum ullam culpa a excepturi! 
+                    Consequatur, dicta!
+                </p>
+                <button type="button" class="btn btn-outline-dark">
+                    Details 
+                </button>
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
